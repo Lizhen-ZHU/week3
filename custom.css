@@ -1,0 +1,114 @@
+body {
+  max-width: 100%； line-height:24px;
+  margin: 100px auto;
+  font-size: 16px;
+  font-family: 'Noto Serif JP', sans-serif;
+  font-weight: 400;
+  background: url(images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.colum {
+  padding: 20px;
+}
+
+.colum.side {
+  flex: 1;
+}
+
+.colum.middle {
+  flex: 2;
+}
+
+#input-text {
+  width: 150px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.spin {
+  margin-right: 20px;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h1 {
+  color: rgb(40, 13, 82);
+  /* red green blue color.adobe.com */
+  margin: 18px 0 8px 0;
+  padding: 0 0 16px 0;
+  font-size: 42px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  border-bottom: 2px solid #999;
+}
+
+h2 {
+  color: rgb(40, 13, 163);
+  /* red green blue color.adobe.com */
+  border-bottom: 2px solid #999;
+}
+
+h3 {
+  color: rgb(60, 50, 189);
+  /* red green blue color.adobe.com */
+}
+
+a {
+  color: rgb(46, 14, 94);
+  border-bottom: 1px dotted;
+  text decoration: none;
+}
+
+a:hover {
+  bprder-bottom-style: solid;
+  color: red;
+}
+
+ul {
+  margin: 0 0 32px 17px;
+}
+
+li {
+  color: rgb(17 5 36);
+}
+
+@media (max-width: 600px) {
+
+  /*change fex dircetion to column 可以适应小宽度*/
+  .row {
+    flex-direction: column;
+  }
+
+  .clr {
+    clear: both;
+  }
+
+  img: hover {
+    transition: all 3s;
+    transition-timing-function: linear;
+    transform: rotate(180deg);
+  }
+
+  #title {
+    display: inline;
+    text-align: center;
+  }
